@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Translate Italian to Sinhala, Tamil, or Tagalog</h1>
+    </header>
+
+    <div class="content">
+        <label for="text-to-translate">Enter Text in Italian:</label>
+        <textarea id="text-to-translate" rows="5" placeholder="Type Italian text here..."></textarea>
+
+        <div>
+            <label for="source-lang">Source Language: Italian</label>
+            <select id="source-lang" disabled>
+                <option value="it">Italian</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="target-lang">Choose Target Language:</label>
+            <select id="target-lang">
+                <option value="si">Sinhala</option>
+                <option value="ta">Tamil</option>
+                <option value="tl">Tagalog</option>
+            </select>
+        </div>
+
+        <button onclick="startTranslation()">Start Translation</button>
+
+        <div id="translation-result">
+            <!-- Translation result will appear here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
